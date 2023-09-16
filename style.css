@@ -75,7 +75,7 @@ h1,h2,h3,h4,h5,h6{font-family:"Segoe UI",Arial,sans-serif;font-weight:400;margin
 .project-box {
     background-color: #dce0dd;
     max-width: 100%;
-    min-height: 400px;
+    min-height: 100px;
     height:auto;
     margin-bottom:20px;
     margin-left:20px;
