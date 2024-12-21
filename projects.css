@@ -105,6 +105,8 @@ h3 {
 .project-details {
     margin-top: 20px;
     margin-bottom: 20px;
+    flex: 2;
+    margin-right: 20px;
 }
 
 .project-details h2 {
@@ -118,4 +120,62 @@ h3 {
   font-size: 1rem;
   color: #666;
   margin: 0px 0px 0px 10px;
+}
+
+.project-image {
+  flex: 1; /* Take up one-third of the space */
+}
+
+.project-image img {
+  max-width: 100%; /* Make the image responsive */
+  height: auto;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Popup Container */
+.popup {
+  display: none; /* Hidden by default */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8); /* Black overlay with transparency */
+  z-index: 1000;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Show Popup */
+.popup:target {
+  display: flex;
+}
+
+/* Overlay */
+.popup-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: transparent; /* Transparent but clickable */
+  z-index: 1; /* Sits behind the content */
+  text-decoration: none; /* Remove link underline */
+}
+
+/* Popup Content */
+.popup-content {
+  position: relative;
+  z-index: 2; /* Content appears above overlay */
+  max-width: 90%;
+  max-height: 90%;
+  text-align: center;
+}
+
+/* Image in Popup */
+.popup-content img {
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 5px;
 }
