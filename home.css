@@ -1,0 +1,110 @@
+/* General Styles */
+body {
+    font-family: 'Georgia', serif;
+    margin: 0;
+    padding: 0;
+    color: #594b30;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Header Styles */
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+  }
+  
+  header .logo {
+    font-weight: bold;
+    font-size: 24px;
+    color: #797669;
+  }
+  
+  header nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: normal;
+    color: #797669;
+  }
+
+  header nav a.active {
+    font-weight: bold; /* Bold style for the current page */
+  }
+  
+  header nav a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Main Content Styles */
+  main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top:50px;
+  }
+  
+  .content {
+    width: 60%;
+  }
+  
+  .content h1 {
+    font-size: 4rem;
+    margin: 0;
+  }
+  
+  .content h1 span {
+    display: block;
+    font-size: 3rem;
+    font-weight: lighter;
+  }
+  
+  .content p {
+    margin-top: 20px;
+    line-height: 1.8;
+  }
+
+  .image-container {
+    position: relative;
+    text-align: center;
+    color: white;
+  }
+  
+  aside {
+    margin-top:30px;
+    width: 35%;
+    position: relative;
+  }
+  
+  .image-container {
+    position: relative;
+    display: inline-block;
+    width: 400px;
+  }
+
+  .image-container img {
+    width: 100%;
+  }
+  
+  aside .info {
+    font-size: 1rem;
+    font-weight: bold;
+  }
+  
+  .vertical-text {
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    margin-top: 20px;
+    font-size: 1rem;
+    color: #555;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    text-align: center;
+  }
+  

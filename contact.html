@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Nileena John Portfolio</title>
+  <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="logo">N. J.</div>
+      <nav>
+        <a href="home.html">HOME</a>
+        <a href="projects.html">PROJECTS</a>
+        <a href="contact.html" class="active">CONTACT</a>
+        <a href="resume.pdf">RESUME</a>
+      </nav>
+    </header>
+    <main class="contact-page">
+      <section class="contact-info">
+        <h2>socials</h2>
+        <div class="social-icons">
+          <a href="https://www.linkedin.com/in/nileena-john/"><img src="linkedin-icon.png" alt="LinkedIn"></a>
+          <a href="https://github.com/nileenajohn"><img src="github-icon.png" alt="GitHub"></a>
+          <a href="https://www.instagram.com/nileena_john/"><img src="instagram-icon.png" alt="Instagram"></a>
+        </div>
+        <h2>contact</h2>
+        <a href="#" style="cursor: auto;"><img src="mail-icon.png" alt="Mail"></a>
+        <p style="margin-bottom: 40px;">
+          nileenabjohn@gmail.com | <span class="email-type">personal</span><br>
+          john.ni@northeastern.edu | <span class="email-type">academic</span>
+        </p>
+        <a href="#" style="cursor: auto;"><img src="phone-icon.png" alt="Phone"></a>
+        <p style="margin-bottom: 40px;">215-601-7208</p>
+        <a href="#" style="cursor: auto;"><img src="location-icon.png" alt="Location"></a>
+        <p>
+          Boston, MA
+        </p>
+      </section>
+      <section class="message-form">
+        <h2>leave a message</h2>
+        <form action="submit-form.php" method="POST">
+          <input type="text" name="name" placeholder="name" required>
+          <input type="email" name="email" placeholder="email" required>
+          <textarea name="message" placeholder="your message" rows="5" required></textarea>
+          <button type="submit">Send</button>
+        </form>
+      </section>
+    </main>
+  </div>
+</body>
+</html>
